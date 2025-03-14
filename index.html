@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" style="background-size: cover; background-image: url(Images/Diseño\ sin\ título.png); background-size: cover; background-position: center; padding: 0; margin: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLAA</title>
+</head>
+<body>
+    <audio src="Audios/Canción Instrumental.mp3" id="audioDeFondo"></audio>
+    <div id="card" style="width: 600px; height: 750px; background-color: color-mix(in srgb, transparent 40%, pink 60%); padding: 20px 10px; margin: 0 auto; margin-top: 50px; border-radius: 20px; text-align: justify; box-shadow: 0 0 20px black; font-size: 1.5em;">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <h1>Feliz Cumpleaños </h1>
+        <p>Hoy es un día especial para ti y quiero aprovechar para desearte y recordarte lo mucho que valoro tenerte en mi vida. Eres una persona única e increíble, para mí, con quien comparto momentos inolvidables cada dia que estoy contigo, me encanta conversar contigo, siempre logras hacer que me sienta tranquilo, y hacer que todo sea más ligero para mi, pero si buscas un significado más profundo de lo que eres para mí, la verdad es que eres quien hace que todos mis días sean mejores y más felices, La verdad, me encanta cómo eres, me encanta cómo me hablas, y me encanta la manera en la que me haces sentir. Hay algo en ti que ilumina mis días y me hace feliz de verdad. Te has vuelto alguien verdaderamente especial en mi vida. Tu voz, tu ternura y la forma en que me tratas hacen que cada momento a tu lado sea único. Estar contigo, aunque sea unos minutos o simplemente leer un mensaje tuyo, siempre me llena de felicidad. Contigo he descubierto lo que realmente significa sentir paz y verdadera felicidad. Me inspiras a ser la mejor versión de mí mismo, y cada día me siento agradecido por haberte conocido. Eres única, y cada pequeña cosa sobre ti hace que me importes aún más. Es increíble cómo, con solo tu presencia, todo mi mundo se ilumina. Quiero que sepas lo importante que eres para mí y lo feliz que me haces con cada pequeño gesto. No hay palabras que realmente describan cuánto significas para mí, pero espero demostrártelo cada día. Solo deseo verte feliz y seguir compartiendo todos estos momentos especiales contigo.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="activadorDeMusica" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: grey; text-align: center; font-size: 3em   ;">
+        <h1>Clickeame :D</h1>
+    </div>
+    <style>
+        @font-face {
+            font-family: "cursiva";
+            src: url(Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+        }
+        @font-face {
+            font-family: "breeserif";
+            src: url(Fonts/breeserif/Bree_Serif/BreeSerif-Regular.ttf);
+        }
+        #flyingImageLeft {
+            position: absolute;
+            bottom: 0px; /* Comienza un poco más abajo */
+            left: 230px; /* Posición horizontal */
+            width: 100px; /* Ajusta el tamaño */
+            animation: flyUp 15s linear infinite; /* Animación infinita */
+            filter: drop-shadow(0 0 10px rgb(59, 10, 59));
+        }
+        #flyingImageRight {
+            position: absolute;
+            bottom: 0px; /* Comienza un poco más abajo */
+            right: 120px; /* Posición horizontal */
+            width: 80px; /* Ajusta el tamaño */
+            animation: flyUp 15s linear infinite; /* Animación infinita */
+            filter: drop-shadow(0 0 10px rgb(59, 10, 59));
+        }
+        #flyingImageLeftMoved {
+            position: absolute;
+            bottom: 0px; /* Comienza un poco más abajo */
+            left: 130px; /* Posición horizontal */
+            width: 100px; /* Ajusta el tamaño */
+            animation: flyUp 15s linear infinite; /* Animación infinita */
+            filter: drop-shadow(0 0 10px rgb(59, 10, 59));
+        }
+        #flyingImageRightMoved {
+            position: absolute;
+            bottom: 0px; /* Comienza un poco más abajo */
+            right: 220px; /* Posición horizontal */
+            width: 120px; /* Ajusta el tamaño */
+            animation: flyUp 15s linear infinite; /* Animación infinita */
+            filter: drop-shadow(0 0 10px rgb(59, 10, 59));
+        }
+        html p{
+            font-size: 18px;
+        }
+        html h1{
+            text-align: center;
+            font-size: 2.5em;
+        }
+        #card{
+            font-family: breeserif;
+            padding: 10px 10px;
+        }
+        @keyframes flyUp {
+            0% {
+            transform: translateY(0px); /* Empieza fuera de la pantalla (abajo) */
+            opacity: 0;
+            }
+        20% {
+            opacity: 1;
+            scale: 1.5;
+            }
+        50%{
+            scale: 2;
+        }
+        70%{
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-700px); /* Se mueve hacia arriba */
+            opacity: 0;
+            scale: 1;
+            }
+        }
+        .filtro-blur {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            backdrop-filter: blur(5px); /* Aplica el desenfoque */
+            pointer-events: none; /* No bloquea clics en otros elementos */
+            z-index: 0; /* Mantiene la capa en el fondo */
+        }
+        #activadorDeMusica{
+            display: block;
+        }
+    </style>
+    <script>
+        let activadorDeMusica = document.getElementById("activadorDeMusica")
+        activadorDeMusica.style.display = "block"
+        function appearFirstFlowers(){
+            firstFlowers = document.createElement("img")
+            firstFlowers.src = "Images/flores.png"
+            firstFlowers.id = "flyingImageRight"
+                document.body.appendChild(firstFlowers)
+        }
+        function appearHeart(){
+            heart = document.createElement("img")
+            heart.src = "Images/corazonesrosaditos.png"
+            heart.id = "flyingImageRightMoved"
+                document.body.appendChild(heart)
+        }
+        function appearFlowerLeft() {
+        flores = document.createElement("img")
+        flores.src = "Images/flores.png"
+        flores.id = "flyingImageLeft"
+            document.body.appendChild(flores)
+        }
+        function appearHeartLeft(){
+            leftHeart = document.createElement("img")
+            leftHeart.src = "Images/corazonesrosaditos.png"
+            leftHeart.id = "flyingImageLeftMoved"
+                document.body.appendChild(leftHeart)
+        }
+        function appearTulipanes(){
+            tulipanes = document.createElement("img")
+            tulipanes.src = "Images/tulipanes.png"
+            tulipanes.id = "flyingImageRight"
+                document.body.appendChild(tulipanes)
+        }
+        function appearCorazonesAbundantes(){
+            corazonesAbundantes = document.createElement("img")
+            corazonesAbundantes.src = "Images/corazonesabundantes.png"
+            corazonesAbundantes.id = "flyingImageLeft"
+                document.body.appendChild(corazonesAbundantes)
+        }
+        function appearTulipanesRight() {
+            tulipanesLeft = document.createElement("img")
+            tulipanesLeft.src = "Images/corazonesabundantes.png"
+            tulipanesLeft.id = "flyingImageRightMoved"
+                document.body.appendChild(tulipanesLeft)
+        }
+        function appearTulipanesLeft() {
+            tulipanesLeftMoved = document.createElement("img")
+            tulipanesLeftMoved.src = "Images/tulipanes.png"
+            tulipanesLeftMoved.id = "flyingImageLeftMoved"
+                document.body.appendChild(tulipanesLeftMoved)
+        }
+
+        if(activadorDeMusica.style.display === "block"){
+            document.body.addEventListener('click', () => {
+            let bgAudio = document.getElementById("audioDeFondo")
+            bgAudio.play()
+            activadorDeMusica.style.display = "none"
+            bgAudio.addEventListener("ended", () => {
+                bgAudio.currentTime = 0; // Reinicia el audio
+                bgAudio.play(); // Lo reproduce de nuevo
+            });
+            
+            setTimeout(() => {
+                appearHeartLeft()
+            }, 1200);
+            setTimeout(() => {
+                appearTulipanesLeft()
+            }, 10000);
+            setTimeout(() => {
+                appearFlowerLeft()
+            }, 4700);
+            setTimeout(() => {
+                appearFirstFlowers()
+            }, 10);
+            setTimeout(() => {
+                appearHeart()
+            }, 3200);
+            setTimeout(() => {
+                appearTulipanes()
+            }, 5600);
+            setTimeout(() => {
+                appearCorazonesAbundantes()
+            }, 7400);
+                    setTimeout(() => {
+                appearTulipanesRight()
+            }, 8500);
+        })
+        } else {
+            console.log("klk")
+        }
+    </script>
+</body>
+</html>
